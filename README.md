@@ -148,7 +148,7 @@ This code lets a user enter details about a transaction (such as date, amount, a
 
 ## OUTPUT FOR INSERTING THE DATA
 
-<img src="https://github.com/user-attachments/assets/4d87535e-8c89-406d-a6b7-bd367d8168f3" alt="Transaction GIF" width="1000" />
+<img src="https://github.com/user-attachments/assets/4d87535e-8c89-406d-a6b7-bd367d8168f3" alt="Transaction GIF" width="800" />
 
 
 ## Fetching All Transactions and Single Transaction from the Table
