@@ -148,34 +148,57 @@ This code lets a user enter details about a transaction (such as date, amount, a
 
 ## OUTPUT FOR INSERTING THE DATA
 
+## Fetching All Transactions and Single Transaction from the Table
+
+<pre>
+  <code>
+    &lt;?php
+// Start the session
+session_start();
+
+// Require the database configuration file
+require 'dbconfig.php';  
+
+try {
+   
+    echo "&lt;h2&gt;Single Record Fetch (fetch())&lt;/h2&gt;";
+    
+    // Prepare and execute the SQL query to fetch one record from the Transactions table
+    $stmt = $conn-&gt;query("SELECT * FROM Transactions LIMIT 1");
+
+    // Fetch a single row as an associative array
+    $row = $stmt-&gt;fetch(PDO::FETCH_ASSOC);
+
+    // Display the result inside &lt;pre&gt; tag using print_r for better readability
+    echo "&lt;pre&gt;";
+    print_r($row);
+    echo "&lt;/pre&gt;";
+
+
+    echo "&lt;h2&gt;All Records Fetch (fetchAll())&lt;/h2&gt;";
+    
+    // Prepare and execute the SQL query to fetch all records from the Transactions table
+    $stmt_all = $conn-&gt;query("SELECT * FROM Transactions");
+
+    // Fetch all rows as an associative array
+    $rows = $stmt_all-&gt;fetchAll(PDO::FETCH_ASSOC);
+
+    // Display all results inside &lt;pre&gt; tag using print_r for better readability
+    echo "&lt;pre&gt;";
+    print_r($rows);
+    echo "&lt;/pre&gt;";
+} catch (PDOException $e) {
+    // Handle any query errors
+    echo "Error: " . $e-&gt;getMessage();
+}
+
+// Close the database connection
+$conn = null;
+?&gt;
+
+  </code>
+</pre>
 
 ## OUTPUT FOR FETCHING THE DATA
 
 <img src="https://github.com/user-attachments/assets/bc9e11fd-705f-4ccf-a4a2-a0a0df71344d" alt="Sample Image" width="100%" height="auto">
-
-## Fetching All Transactions and Single Transaction from the Table
-
-```php
-// Prepare and execute the SQL query to fetch all records from the Transactions table
-$stmt_all = $conn->query("SELECT * FROM Transactions");
-
-// Fetch all rows as an associative array
-$rows = $stmt_all->fetchAll(PDO::FETCH_ASSOC);
-
-// Display all results inside <pre> tag using print_r for better readability
-echo "<pre>";
-print_r($rows);
-echo "</pre>";
-
-
-// Prepare and execute the SQL query to fetch one record from the Transactions table
-$stmt = $conn->query("SELECT * FROM Transactions LIMIT 1");
-
-// Fetch a single row as an associative array
-$row = $stmt->fetch(PDO::FETCH_ASSOC);
-
-// Display the result inside <pre> tag using print_r for better readability
-echo "<pre>";
-print_r($row);
-echo "</pre>";
-
