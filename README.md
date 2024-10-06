@@ -7,7 +7,7 @@ This Activity demonstrates how to use PHP Data Objects (PDO) to interact with a 
 
 ## Output of fetching
 
-<img src="https://github.com/user-attachments/assets/4a488c11-a159-41c6-ac87-cfecde20d59e" alt="Example Output" width="1000" />
+<img src="https://github.com/user-attachments/assets/bc9e11fd-705f-4ccf-a4a2-a0a0df71344d" alt="Sample Image" width="100%" height="auto">
 
 ## Fetching All Transactions and Single Transaction from the Table
 
