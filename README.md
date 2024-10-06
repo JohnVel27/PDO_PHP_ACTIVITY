@@ -1,8 +1,11 @@
 # PDO PHP Activity
 
-This Activity demonstrates how to use PHP Data Objects (PDO) to interact with a MySQL database and fetch records from a `Transactions` table.
+This Activity demonstrates how to use PHP Data Objects (PDO) to interact with a MySQL database and insertion,deletion,updating and fetching records from a `Transactions` table.
 
-# Output
+# INSERTION OF RECORD
+
+
+## Output
 
 <img src="https://github.com/user-attachments/assets/4a488c11-a159-41c6-ac87-cfecde20d59e" alt="Example Output" width="1000" />
 
