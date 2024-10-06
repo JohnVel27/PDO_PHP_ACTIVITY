@@ -40,4 +40,4 @@ This code fetches one record from a table and displays it clearly on the page.
 
 # OUTPUT
 
-<img src="https://github.com/user-attachments/assets/4a488c11-a159-41c6-ac87-cfecde20d59e" alt="Description of the image" width="1500" />
+<img src="https://github.com/user-attachments/assets/4a488c11-a159-41c6-ac87-cfecde20d59e" alt="Description of the image" width="1000" />
