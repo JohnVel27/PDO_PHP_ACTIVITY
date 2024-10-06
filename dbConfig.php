@@ -2,7 +2,7 @@
 $host = "localhost";
 $user = "root";
 $password = "";
-$dbname = "cashflows";
+$dbname = "php_cashflow_system";
 $dsn = "mysql:host={$host};dbname={$dbname}";
 
 $conn = new PDO($dsn,$user,$password);
