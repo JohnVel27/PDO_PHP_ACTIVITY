@@ -1,25 +1,12 @@
-# PDO PHP ACTIVITY
+# PDO PHP Activity
 
-## Selecting All Transaction from the table
+This project demonstrates how to use PHP Data Objects (PDO) to interact with a MySQL database and fetch records from a `Transactions` table.
 
-```php
-// Prepare and execute the SQL query to fetch all records from the Transactions table
-$stmt_all = $conn->query("SELECT * FROM Transactions");
+# Output
 
-// Fetch all rows as an associative array
-$rows = $stmt_all->fetchAll(PDO::FETCH_ASSOC);
+<img src="https://github.com/user-attachments/assets/4a488c11-a159-41c6-ac87-cfecde20d59e" alt="Example Output" width="1000" />
 
-// Display all results inside <pre> tag using print_r for better readability
-echo "<pre>";
-print_r($rows);
-echo "</pre>";
-  
-
-
-This code snippet is fetching all the records from the transactions table in a database and displaying them in a human-readable format using the print_r() function inside a <pre> tag.
-
-## Selecting Single transaction from the table
-
+## Fetching All Transactions and Single Transaction from the Table
 
 ```php
 // Prepare and execute the SQL query to fetch all records from the Transactions table
@@ -34,8 +21,14 @@ print_r($rows);
 echo "</pre>";
 
 
-This code fetches one record from a table and displays it clearly on the page.
+// Prepare and execute the SQL query to fetch one record from the Transactions table
+$stmt = $conn->query("SELECT * FROM Transactions LIMIT 1");
 
-# OUTPUT
+// Fetch a single row as an associative array
+$row = $stmt->fetch(PDO::FETCH_ASSOC);
 
-<img src="https://github.com/user-attachments/assets/4a488c11-a159-41c6-ac87-cfecde20d59e" alt="Description of the image" width="1000" />
+// Display the result inside <pre> tag using print_r for better readability
+echo "<pre>";
+print_r($row);
+echo "</pre>";
+
