@@ -5,7 +5,7 @@ This Activity demonstrates how to use PHP Data Objects (PDO) to interact with a 
 # INSERTION OF RECORD
 
 
-## Output
+## Output of fetching
 
 <img src="https://github.com/user-attachments/assets/4a488c11-a159-41c6-ac87-cfecde20d59e" alt="Example Output" width="1000" />
 
