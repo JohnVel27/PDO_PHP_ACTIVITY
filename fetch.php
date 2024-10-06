@@ -6,7 +6,7 @@ session_start();
 require 'dbconfig.php';  
 
 try {
-    // First, let's demonstrate fetch() - fetching a single record
+   
     echo "<h2>Single Record Fetch (fetch())</h2>";
     
     // Prepare and execute the SQL query to fetch one record from the Transactions table
@@ -20,7 +20,7 @@ try {
     print_r($row);
     echo "</pre>";
 
-    // Now, let's demonstrate fetchAll() - fetching all records
+
     echo "<h2>All Records Fetch (fetchAll())</h2>";
     
     // Prepare and execute the SQL query to fetch all records from the Transactions table
